@@ -19,15 +19,16 @@ import javax.imageio.ImageIO;
 import org.apache.pdfbox.Loader;
 import org.apache.pdfbox.pdmodel.PDDocument;
 import org.apache.pdfbox.rendering.PDFRenderer;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 import org.springframework.web.multipart.MultipartFile;
 
-import lombok.extern.slf4j.Slf4j;
-
-@Slf4j
 @Service
 public class ImageProcessingService {
+
+    private static final Logger log = LoggerFactory.getLogger(ImageProcessingService.class);
 
     @Value("${app.upload.dir}")
     private String uploadDir;

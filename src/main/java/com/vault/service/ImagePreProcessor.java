@@ -6,13 +6,14 @@ import java.io.IOException;
 
 import javax.imageio.ImageIO;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Service;
 
-import lombok.extern.slf4j.Slf4j;
-
-@Slf4j
 @Service
 public class ImagePreProcessor {
+
+    private static final Logger log = LoggerFactory.getLogger(ImagePreProcessor.class);
 
     public File preprocessForOcr(File inputImage) throws IOException {
         long startTime = System.currentTimeMillis();

@@ -28,12 +28,14 @@ import com.vault.domain.NoteFileStore;
 import com.vault.domain.NoteRepository;
 
 import jakarta.annotation.PostConstruct;
-import lombok.extern.slf4j.Slf4j;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import net.sourceforge.tess4j.Tesseract;
 
-@Slf4j
 @Service
 public class OcrService {
+
+    private static final Logger log = LoggerFactory.getLogger(OcrService.class);
 
     @Value("${app.tessdata.dir}")
     private String tessdataDir;

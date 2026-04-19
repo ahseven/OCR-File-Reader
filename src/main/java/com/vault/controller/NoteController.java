@@ -20,18 +20,22 @@ import com.vault.domain.NoteRepository;
 import com.vault.service.ImageProcessingService;
 import com.vault.service.OcrService;
 
-import lombok.Data;
-import lombok.RequiredArgsConstructor;
-
 @RestController
 @RequestMapping("/api/notes")
-@RequiredArgsConstructor
 public class NoteController {
 
     private final ImageProcessingService imageProcessingService;
     private final OcrService ocrService;
     private final NoteRepository noteRepository;
     private final NoteFileStore noteFileStore;
+
+    public NoteController(ImageProcessingService imageProcessingService, OcrService ocrService,
+                          NoteRepository noteRepository, NoteFileStore noteFileStore) {
+        this.imageProcessingService = imageProcessingService;
+        this.ocrService = ocrService;
+        this.noteRepository = noteRepository;
+        this.noteFileStore = noteFileStore;
+    }
 
     @PostMapping("/upload")
     public ResponseEntity<?> uploadNote(@RequestParam("file") MultipartFile file) {
@@ -169,23 +173,12 @@ public class NoteController {
         return snippet;
     }
 
-    @Data
-    public static class UploadResult {
-        private final String id;
-        private final String originalFilename;
-        private final String status;
+    public static record UploadResult(String id, String originalFilename, String status) {
     }
 
-    @Data
-    public static class BulkUploadResponse {
-        private final List<UploadResult> results;
+    public static record BulkUploadResponse(List<UploadResult> results) {
     }
 
-    @Data
-    public static class SearchResult {
-        private final String imageUrl;
-        private final String snippet;
-        private final String filename;
-        private final String fullContent;
+    public static record SearchResult(String imageUrl, String snippet, String filename, String fullContent) {
     }
 }
