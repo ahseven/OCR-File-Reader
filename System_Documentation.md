@@ -14,7 +14,7 @@ The app is built to be:
 ## Key components
 
 ### Application entry
-- `com.vault.HandwrittenNoteVaultApplication`
+- `com.vault.OcrFileReaderApplication`
 - Annotated with `@SpringBootApplication`
 - Boots the Spring context and starts embedded Tomcat
 
@@ -113,7 +113,7 @@ The app is built to be:
 ## Configuration
 
 ### `src/main/resources/application.properties`
-- `spring.application.name=handwritten-note-vault`
+- `spring.application.name=ocr-file-reader`
 - `server.port=8080`
 
 #### SQLite tuning
@@ -286,7 +286,7 @@ The app is built to be:
 ## Run notes
 
 - Build with `./mvnw.cmd -DskipTests compile`
-- Start the app from `HandwrittenNoteVaultApplication`
+- Start the app from `OcrFileReaderApplication`
 - Access the app at `http://localhost:8080`
 - Allow the application to download `tessdata/eng.traineddata` if it is not present
 - Processed images are stored under `processed-notes`

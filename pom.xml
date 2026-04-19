@@ -11,10 +11,10 @@
 	</parent>
 
 	<groupId>com.vault</groupId>
-	<artifactId>handwritten-note-vault</artifactId>
+	<artifactId>ocr-file-reader</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>handwritten-note-vault</name>
-	<description>Handwritten Note Vault</description>
+	<name>ocr-file-reader</name>
+	<description>OCR file reader</description>
 
 	<properties>
 		<java.version>21</java.version>

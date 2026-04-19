@@ -1,4 +1,4 @@
-# 📟 Handwritten Note Vault
+# � OCR File Reader
 
 A Spring Boot application for uploading handwritten note images and PDF pages, extracting text with OCR, and searching saved note content.
 
@@ -15,8 +15,8 @@ This repository is ready to clone and run locally with the included Maven wrappe
 
 ### Clone the repository
 ```powershell
-git clone https://github.com/<your-username>/Java-OCR-search.git
-cd Java-OCR-search
+git clone https://github.com/<your-username>/ocr-file-reader.git
+cd ocr-file-reader
 ```
 
 ### Run the app

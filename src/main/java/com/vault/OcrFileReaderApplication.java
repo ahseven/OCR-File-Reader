@@ -6,8 +6,8 @@ import org.springframework.scheduling.annotation.EnableAsync;
 
 @SpringBootApplication
 @EnableAsync
-public class HandwrittenNoteVaultApplication {
+public class OcrFileReaderApplication {
 	public static void main(String[] args) {
-		SpringApplication.run(HandwrittenNoteVaultApplication.class, args);
+		SpringApplication.run(OcrFileReaderApplication.class, args);
 	}
 }
