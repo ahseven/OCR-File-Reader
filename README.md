@@ -80,13 +80,6 @@ java -jar target/*.jar
 
 ---
 
-## ✅ GitHub / deployment notes
-- Do not commit `vault.db` unless it is intentionally an empty starter database.
-- Keep generated artifact directories out of source control: `target/`, `.mvn/wrapper/`, `node_modules/`, and local caches.
-- Use `git status` to verify the final diff before committing.
-
----
-
 ## 💬 Troubleshooting
 - If the app does not start, verify Java is installed and use the correct Maven wrapper command for your OS.
 - If OCR fails, confirm `tessdata/eng.traineddata` exists in the repository.
