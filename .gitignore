@@ -1,0 +1,45 @@
+# Maven build output
+/target/
+
+# IDE-specific files
+*.iml
+.idea/
+.vscode/
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Logs and temporary files
+*.log
+
+# SQLite database files
+vault.db
+vault.db-shm
+vault.db-wal
+
+# Java build artifacts
+*.class
+*.jar
+*.war
+*.ear
+
+# Package managers
+node_modules/
+
+# Maven wrapper cache
+.mvn/wrapper/
+
+# Generated files
+generated-sources/
+generated-test-sources/
+
+# Temporary files
+.tmp/
+name-list/
+processed-notes/*
+!processed-notes/.gitkeep
+vault.db
+
+# Optional: generated notes store if you use a local file database
+notes.json
