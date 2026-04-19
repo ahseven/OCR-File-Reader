@@ -43,3 +43,11 @@ vault.db
 
 # Optional: generated notes store if you use a local file database
 notes.json
+
+# Local workspace-only docs
+AGENTS.md
+ARCHITECTURE_AND_FLOW.md
+CLASSES_AND_METHODS.md
+presentation_flow copy.md
+presentation_flow.md
+run_instruction.txt
