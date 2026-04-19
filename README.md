@@ -15,7 +15,7 @@ This repo is configured for GitHub deployment and includes instructions for runn
 
 ### Clone the repository
 ```powershell
-git clone https://github.com/ahseven/Java-OCR-search.git
+git clone https://github.com/ahseven/OCR-File-Reader.git
 cd Java-OCR-search
 ```
 
