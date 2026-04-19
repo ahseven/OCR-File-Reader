@@ -15,7 +15,7 @@ This repository is ready to clone and run locally with the included Maven wrappe
 
 ### Clone the repository
 ```powershell
-git clone https://github.com/<your-username>/ocr-file-reader.git
+git clone https://github.com/ahseven/ocr-file-reader.git
 cd ocr-file-reader
 ```
 
