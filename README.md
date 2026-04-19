@@ -36,7 +36,7 @@ Open the app in your browser:
 ---
 
 ## 🧩 What this app does
-- Upload handwritten image files and PDF pages
+- Upload image files (with text contents and white background) and PDF pages
 - Preprocess images for better OCR accuracy
 - Extract text using Tesseract-compatible OCR data
 - Save extracted note text to a local SQLite database
