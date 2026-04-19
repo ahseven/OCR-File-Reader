@@ -23,12 +23,12 @@ vault.db-wal
 *.jar
 *.war
 *.ear
+!.mvn/wrapper/maven-wrapper.jar
 
 # Package managers
 node_modules/
 
 # Maven wrapper cache
-.mvn/wrapper/
 
 # Generated files
 generated-sources/

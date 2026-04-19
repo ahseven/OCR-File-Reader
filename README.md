@@ -11,7 +11,7 @@ This repository is ready to clone and run locally with the included Maven wrappe
 ### Prerequisites
 - Java 21 or later
 - Git
-- No local Maven installation required
+- No local Maven installation required (the repository includes the Maven wrapper files)
 
 ### Clone the repository
 ```powershell
